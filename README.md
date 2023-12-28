@@ -5,7 +5,7 @@ This project aims to develop a traffic sign detection model for classification p
 ## Methodology
 
 ### 1. Dataset
-The dataset used for training the model is sourced from the [German Traffic Sign Recognition Benchmark (GTSRB)]([https://benchmark.ini.rub.de/gtsrb_news.html](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)). It consists of images of traffic signs belonging to 43 different classes.
+The dataset used for training the model is sourced from the [German Traffic Sign Recognition Benchmark (GTSRB)](https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign). It consists of images of traffic signs belonging to 43 different classes.
 
 ### 2. Model Architecture
 The model is based on a Convolutional Neural Network (CNN) architecture. It includes convolutional layers, pooling layers, fully connected layers, and a softmax layer for classification.
