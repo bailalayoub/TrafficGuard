@@ -29,6 +29,26 @@ The application of the model for real-time traffic sign detection is demonstrate
 - **traffic_sign_model.h5**: Trained model saved in H5 format.
 - **WebCam.ipynb**: Code for real-time detection using the webcam.
 - **yield.jpg**: Example of detection for the "Yield" class.
+- **train.py**: Script to train a new model using the GTSRB dataset with data augmentation.
+- **flask_app.py**: Minimal Flask application for testing the model with a live camera stream.
 
+## Usage
+
+### Training
+Place the GTSRB training images into a directory structured by class labels and run:
+
+```bash
+python train.py --data-dir path/to/GTSRB/Train --output traffic_sign_model.h5 --epochs 15
+```
+
+### Running the Flask App
+Install the required dependencies and start the server:
+
+```bash
+pip install -r requirements.txt
+python flask_app.py
+```
+
+Open `http://localhost:5000` in a browser to see the live predictions from your webcam.
 
 Feel free to contribute and enhance this project!
